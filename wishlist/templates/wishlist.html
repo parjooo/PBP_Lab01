@@ -2,7 +2,10 @@
 
 {% block content %}
 <h5>Nama: </h5>
-<b>Faris Bayhaqi</b>
+<b>{{nama}}</b>
+
+<h5>NPM: </h5>
+<b>{{npm}}</b>
 
 <table>
     <tr>
@@ -19,5 +22,6 @@
         </tr>
     {% endfor %}
 </table>
-
+<h5>Sesi terakhir login: {{ last_login }}</h5>
+<button><a href="{% url 'wishlist:logout' %}">Logout</a></button>
 {% endblock content %}
