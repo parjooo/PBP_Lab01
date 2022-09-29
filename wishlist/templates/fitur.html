@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="text-align: center; font-family: sans-serif;">
+    <b style="color: #9c9595;">1. Show data (XML)</b>
+    <p style="color: #9c9595;">Return data in XML formating.</p>
+    <button style="height: 30px; background-color: #181414;"><a href="{% url 'wishlist:show_xml' %}"><p style="color: #9c9595">Show XML</p></a></button>
+    <p></p>
+</div>
+<div style="text-align: center; font-family: sans-serif;">
+    <b style="color: #9c9595;">2. Show data (Json)</b>
+    <p style="color: #9c9595;">Return data in Json formating.</p>
+    <button style="height: 30px; background-color: #181414;"><a href="{% url 'wishlist:show_json' %}"><p style="color: #9c9595">Show Json</p></a></button>
+</div>
+<head>
+    <style type ="text/css" >
+      .footer{ 
+          position: fixed;     
+          text-align: center;    
+          bottom: -1px; 
+          width: 100%;
+          height: 6%;
+          background-color: #181414;
+
+      }  
+   </style>
+   </head>
+   <body>
+       <div class="footer" style="font-family: sans-serif; color: #9c9595;">Last Login: {{ last_login }}</div>
+    </body>
+{% endblock content %}

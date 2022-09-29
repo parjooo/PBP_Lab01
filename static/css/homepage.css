@@ -1,0 +1,16 @@
+.navbar{
+    background-color: #181414;
+    margin:0%;
+    padding: 0%;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.navbar-nav{
+    font-family: 'sans-serif';
+    color: #9c9595;
+}
+
+.logo{
+    height: 30px;
+    width: 30px;
+}
